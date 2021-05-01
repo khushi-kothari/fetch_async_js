@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head><title> Fetch Data </title></head>
+<body>
+
+<h2>Using async / await / fetch</h2>
+
+<div id="demo"></div>
+
+<script>
+
+// async / await / fetch
+
+async function fetchUsers() {
+	const res = await fetch("https://jsonplaceholder.typicode.com/users");
+    
+    const data = await res.json();
+    
+    //alert(data);
+    console.log(data);
+}
+
+fetchUsers();
+
+</script>
+
+</body>
+</html>
